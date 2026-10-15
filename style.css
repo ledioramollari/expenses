@@ -1,3 +1,62 @@
-h1{
-    color: aqua;
+body{
+    justify-content: center;
+ margin: 0%;
+padding: 0%;
+   
 }
+.navigation{
+    display: flex;
+    justify-content: center;
+   
+    gap: 120px;
+    background-color: rgb(45, 76, 255);
+    height: 70px;
+    align-items: center;
+    min-width: 500px; 
+    
+   
+}
+
+
+#others{
+display: flex;
+
+}
+
+#expenses{
+    white-space: nowrap;
+}
+
+a{
+    
+    
+    font-size: 24px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(241, 235, 235);
+   text-decoration: none; 
+   font-weight: 550;
+   padding: 15px;
+
+   
+}
+
+.ancor:hover{
+    background-color:rgb(102, 122, 236);
+}
+
+.ancor{
+    border-radius: 15px;
+    font-size: 16px; 
+    font-weight: 200;
+}
+
+#clock{
+    display: flex;
+    padding-left: 100px;
+    font-size: 18px;
+    color: white;
+ font-weight: 200px;
+}
+
+
+
