@@ -1,14 +1,10 @@
 body {
     display: flex;
     flex-direction: column;
-    /* Forces the divs to stack in a vertical column */
     align-items: center;
-    /* Centers the divs horizontally (left-to-right) */
     justify-content: center;
-    /* Centers the whole column vertically (top-to-bottom) */
     background-color: #f0f0f0;
     margin: 0%;
-
 }
 
 .navigation {
@@ -122,7 +118,8 @@ p {
     border-radius: 20px;
     background-color: rgb(255, 254, 253);
     margin: 5px;
-    padding: 10px;
+    padding: 20px;
+    padding-top: 10px;
     width: 500px;
 
 }
@@ -179,15 +176,15 @@ select {
 
 }
 
-h2{
+h2 {
     font-weight: 100;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 
 #topTable {
     display: flex;
-   margin: 15px;
+    margin: 15px;
 }
 
 #titleSearch {
@@ -195,25 +192,25 @@ h2{
     margin-left: 400px;
 }
 
-table{
+table {
     margin-top: 10px;
-   margin-left: -100px;
-    border-spacing: 130px 0px;  
- font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: -100px;
+    border-spacing: 130px 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
 
 
 
-#fullTable{
-    
+#fullTable {
+
     border-radius: 20px;
     width: 900px;
     background-color: white;
 }
 
-#Delete{
+#Delete {
     margin: 15px;
     margin-left: 600px;
     border: 2px solid red;
@@ -224,7 +221,7 @@ table{
     border-radius: 10px;
 }
 
-#currencyPage{
+#currencyPage {
     margin: 20px;
     background-color: white;
     border-radius: 20px;
