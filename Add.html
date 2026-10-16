@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-     <script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
+
 <body onload="startTime()">
     <div class="navigation">
-       
-        <div id="expenses">
-        <a href="home.html">Expense Tracker</a>
-       </div> 
 
-       <div id="others">
-        <a href="home.html" class="ancor">Home</a>
-        <a href="Add.html" class="ancor" style="background-color:rgb(102, 122, 236);">Add</a>
-        <a href="expenses.html" class="ancor">Expenses</a>
-        <a href="Currency.html" class="ancor">Currency</a>
+        <div id="expenses">
+            <a href="home.html">Expense Tracker</a>
+        </div>
+
+        <div id="others">
+            <a href="home.html" class="ancor">Home</a>
+            <a href="Add.html" class="ancor" style="background-color:rgb(102, 122, 236);">Add</a>
+            <a href="expenses.html" class="ancor">Expenses</a>
+            <a href="Currency.html" class="ancor">Currency</a>
         </div>
 
         <div id="clock"></div>
-    
+
     </div>
 
-    <div id="addinfo" >
-    <h3>Add expense</h3>
-    <h5>Title</h5>
-    <input type="text" placeholder="Example:Coffe with friends">
-    
-    <h5>Amount(Lek)</h5>
-    <input type="number" placeholder="Example:300">
+    <div id="addinfo">
+        <h3>Add expense</h3>
+        <h5>Title</h5>
+        <input type="text" placeholder="Example:Coffe with friends">
 
-    <h5>Category</h5>
-    <select name="category" >
-        <option value="" disabled selected hidden>Select a category</option>
-        <option value="food">Food</option>
-        <option value="Transport">Transport</option>
-        <option value="books">Books</option>
-        <option value="Rent">Rent</option>
-        <option value="others">Others</option>
-    </select>
-    <h5>Date</h5>
-<input type="date">
-</div>
+        <h5>Amount(Lek)</h5>
+        <input type="number" placeholder="Example:300">
+
+        <h5>Category</h5>
+        <select name="category">
+            <option value="" disabled selected hidden>Select a category</option>
+            <option value="food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="books">Books</option>
+            <option value="Rent">Rent</option>
+            <option value="others">Others</option>
+        </select>
+        <h5>Date</h5>
+        <input type="date">
+
+        <button>Add</button>
+    </div>
 
 
-</body>     
+</body>
+
 </html>

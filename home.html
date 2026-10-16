@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-     <script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
+
 <body onload="startTime()">
     <div class="navigation">
-       
-        <div id="expenses">
-        <a href="home.html">Expense Tracker</a>
-       </div> 
 
-       <div id="others">
-        <a href="home.html" class="ancor" style="background-color:rgb(102, 122, 236);">Home</a>
-        <a href="Add.html" class="ancor">Add</a>
-        <a href="expenses.html" class="ancor">Expenses</a>
-        <a href="Currency.html" class="ancor">Currency</a>
+        <div id="expenses">
+            <a href="home.html">Expense Tracker</a>
+        </div>
+
+        <div id="others">
+            <a href="home.html" class="ancor" style="background-color:rgb(102, 122, 236);">Home</a>
+            <a href="Add.html" class="ancor">Add</a>
+            <a href="expenses.html" class="ancor">Expenses</a>
+            <a href="Currency.html" class="ancor">Currency</a>
         </div>
 
         <div id="clock"></div>
-    
-    </div>
-<br><br>
 
-<div id="boxes">
-    <div id="info">
-    <div>
-    <h1>Track your student expenses</h1>
-    <p>A small application built step by step during the Web Development course. Everything you <br>
-         add is saved in your browser with localStorage, so it is still here after you close the tab.</p>
     </div>
+    <br><br>
 
-    
-</div>
+    <div id="boxes">
+        <div id="info">
+            <div>
+                <h1>Track your student expenses</h1>
+                <p>A small application built step by step during the Web Development course. Everything you <br>
+                    add is saved in your browser with localStorage, so it is still here after you close the tab.</p>
+            </div>
 
-<div id="numbers">
-    <div class="boxes">
-        <h3>Expenses saved</h3>
-        <h1 id="saved">0</h1>
+
+        </div>
+
+        <button>Add your first expense</button>
+
+        <div id="numbers">
+            <div class="boxes">
+                <h3>Expenses saved</h3>
+                <h1 id="saved">0</h1>
+            </div>
+            <div class="boxes">
+                <h3>Total spent</h3>
+                <h1 id="total">0</h1>
+            </div>
+            <div class="boxes">
+                <h3>most recent</h3>
+                <h1 id="recent">0</h1>
+            </div>
+        </div>
+
     </div>
-    <div class="boxes">
-        <h3>Total spent</h3>
-        <h1 id="total">0</h1>
-    </div>
-    <div class="boxes">
-        <h3>most recent</h3>
-        <h1 id="recent">0</h1>
-    </div>
-  </div>
-</div>
-</body>     
+</body>
+
 </html>

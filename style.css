@@ -1,137 +1,233 @@
-body{
+body {
     display: flex;
-  flex-direction: column;   /* Forces the divs to stack in a vertical column */
-  align-items: center;      /* Centers the divs horizontally (left-to-right) */
-  justify-content: center;  /* Centers the whole column vertically (top-to-bottom) */
-  background-color: #f0f0f0; 
-   
-}
-.navigation{
-
-    display:flex;
+    flex-direction: column;
+    /* Forces the divs to stack in a vertical column */
+    align-items: center;
+    /* Centers the divs horizontally (left-to-right) */
     justify-content: center;
-   
+    /* Centers the whole column vertically (top-to-bottom) */
+    background-color: #f0f0f0;
+    margin: 0%;
+
+}
+
+.navigation {
+
+    display: flex;
+    justify-content: center;
+
     gap: 120px;
     background-color: rgb(45, 76, 255);
     height: 70px;
     align-items: center;
     width: 100%;
-    
-    
-   
 }
 
 
-#others{
-display: flex;
+#others {
+    display: flex;
 
 }
 
-#expenses{
+#expenses {
     white-space: nowrap;
 }
 
-a{
-    
-    
+a {
+
+
     font-size: 24px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   color: rgb(241, 235, 235);
-   text-decoration: none; 
-   font-weight: 550;
-   padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(241, 235, 235);
+    text-decoration: none;
+    font-weight: 550;
+    padding: 15px;
 
-   
+
 }
 
-.ancor:hover{
-    background-color:rgb(102, 122, 236);
+.ancor:hover {
+    background-color: rgb(102, 122, 236);
 }
 
-.ancor{
+.ancor {
     border-radius: 15px;
-    font-size: 16px; 
+    font-size: 16px;
     font-weight: 200;
 }
 
-#clock{
+#clock {
     display: flex;
     padding-left: 100px;
     font-size: 18px;
     color: white;
- font-weight: 200px;
+    font-weight: 200px;
 }
 
-h1{
+h1 {
+    margin: 5px;
     font-weight: 200;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#info{
-    
+#info {
+
     justify-content: center;
     display: inline-flex;
 }
 
-#boxes{
-     
-  flex-direction: column;   /* Forces the divs to stack in a vertical column */
-   
-   
+#boxes {
+
+    flex-direction: column;
+
+
+
     gap: 30px;
     align-items: center;
-   
+
 }
 
-.boxes{
+.boxes {
     border-radius: 20px;
     background-color: rgb(255, 254, 253);
     margin: 5px;
     padding: 10px;
     width: 240px;
     height: auto;
-   
+
 
 }
 
-#numbers{
-    display:flex;
+#numbers {
+    display: flex;
     gap: 40px;
 
 }
 
-h3{
+h3 {
     margin-left: 5px;
-   font-weight:100;
-   color: #868686;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: 100;
+    color: #868686;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-p{
+p {
     color: #888888;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#addinfo{
-    
+#addinfo {
+
     margin: 20px;
     border-radius: 20px;
     background-color: rgb(255, 254, 253);
     margin: 5px;
     padding: 10px;
     width: 500px;
-   
+
 }
 
-input{
-width: 90%; 
-margin: 5px;
-height: 30px;
-border: 2px solid #b8bbc2;
-border-radius: 7px;
+input {
+    width: 90%;
+    margin: 5px;
+    height: 30px;
+    border: 2px solid #b8bbc2;
+    border-radius: 7px;
 }
 
-h5{
+h5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 28px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-weight: 100;
+}
+
+button {
+    margin: 15px;
+    border: 2px solid rgb(45, 76, 255);
+    color: white;
+    background-color: rgb(45, 76, 255);
+    width: 90%;
+    height: 40px;
+    border-radius: 15px;
+}
+
+select {
+    width: 90%;
+    margin: 5px;
+    height: 30px;
+    border: 2px solid #b8bbc2;
+    border-radius: 7px;
+}
+
+#expenseBoxes {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+}
+
+.boxe {
+    border-radius: 20px;
+    background-color: rgb(255, 254, 253);
+    margin: 5px;
+    padding: 10px;
+    width: 195px;
+    height: 100px;
+
+
+}
+
+h2{
+    font-weight: 100;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+
+
+#topTable {
+    display: flex;
+   margin: 15px;
+}
+
+#titleSearch {
+    width: 200px;
+    margin-left: 400px;
+}
+
+table{
+    margin-top: 10px;
+   margin-left: -100px;
+    border-spacing: 130px 0px;  
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+
+
+#fullTable{
     
+    border-radius: 20px;
+    width: 900px;
+    background-color: white;
 }
 
+#Delete{
+    margin: 15px;
+    margin-left: 600px;
+    border: 2px solid red;
+    color: white;
+    background-color: red;
+    width: 25%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+#currencyPage{
+    margin: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 2px;
+}

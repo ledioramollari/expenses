@@ -24,5 +24,29 @@
         <div id="clock"></div>
     
     </div>
+
+    <div id="currencyPage">
+        <h2>Convert your total</h2>
+        <p>
+            The exchange rate comes from a third-party API: https://open.er <br>
+            -api.com/v6/latest/ALL. Open DevTools, Network tab, and watch the request <br>
+            when you press Convert.
+        </p>
+
+        <h5>Amount in Lek</h5>
+        <input type="number">
+        <h5>Currency</h5>
+        <select name="Currency" id="">
+            
+            <option value="EUR">EUR</option>
+            <option value="USD">UDS</option>
+            <option value="GPB">GPB</option>
+            <option value="CHF">CHF</option>
+            <option value="TRY">TRY</option>
+            <option value="MKD">MKD</option>
+        </select>
+
+        <h1 id="converted"></h1>
+    </div>
 </body>     
 </html>
