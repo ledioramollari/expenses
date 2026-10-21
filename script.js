@@ -15,6 +15,14 @@ function add() {
     const category = document.getElementById('category').value
     const date = document.getElementById('date').value
     addExpense(title, amount, category, date);
+    clear();
+}
+
+function clear() {
+    document.getElementById('title').value = " ";
+    document.getElementById('Amount').value = " ";
+    document.getElementById('category').value = " ";
+    document.getElementById('date').value = " ";
 }
 
 function addExpense(title, amount, category, date) {
@@ -34,8 +42,24 @@ function update() {
     }
     avg = total / length;
     document.getElementById('total').innerHTML = total;
-    document.getElementById('avg').innerHTML = avg;
+    document.getElementById('avg').innerHTML = avg.toFixed(2);
     document.getElementById('recent').innerHTML = list[length - 1].amount;
+
+
+
+
+}
+
+function updateHome() {
+    length = list.length;
+    let total = 0;
+
+    for (let i = 0; i < length; i++) {
+        total += Number(list[i].amount);
+    }
+    document.getElementById('rec').innerHTML = list[length - 1].amount;
+    document.getElementById('sav').innerHTML = length;
+    document.getElementById('tot').innerHTML = total;
 
 
 }
