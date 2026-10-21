@@ -26,7 +26,7 @@ function clear() {
 }
 
 function addExpense(title, amount, category, date) {
-    list.push({ title: [title], amount: [amount], category: [category], date: [date] });
+    list.push({ title: title, amount: amount, category: category, date: date });
 
     localStorage.setItem('myExpenses', JSON.stringify(list))
 
@@ -40,26 +40,39 @@ function update() {
     for (let i = 0; i < length; i++) {
         total += Number(list[i].amount);
     }
-    avg = total / length;
+    if (length == 0) {
+        avg = 0;
+    }
+    else {
+        avg = total / length;
+    }
     document.getElementById('total').innerHTML = total;
     document.getElementById('avg').innerHTML = avg.toFixed(2);
-    document.getElementById('recent').innerHTML = list[length - 1].amount;
+    
+    let recent=document.getElementById('recent');
+    if(list.length==0){
+        recent.innerHTML = 0;
+    }
 
-
-
-
+    else{
+        recent.innerHTML = list[length - 1].amount;
+    }
 }
 
 function updateHome() {
     length = list.length;
     let total = 0;
-
+    let max = 0;
     for (let i = 0; i < length; i++) {
         total += Number(list[i].amount);
+        if (list[i].amount > max) {
+            max = list[i].amount;
+        }
     }
-    document.getElementById('rec').innerHTML = list[length - 1].amount;
+    document.getElementById('rec').innerHTML = max;
     document.getElementById('sav').innerHTML = length;
     document.getElementById('tot').innerHTML = total;
+
 
 
 }
@@ -123,6 +136,14 @@ function convert(toCurrency, amount) {
 
 }
 
+
+function deleteall(){
+    list.length=0;
+    console.log(list.length)
+     localStorage.setItem('myExpenses', JSON.stringify(list));
+update() ;
+
+}
 
 
 
