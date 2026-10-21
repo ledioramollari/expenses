@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
      <script src="script.js" defer></script>
 </head>
-<body onload="startTime()">
+<body onload="startTime(),update()" >
     <div class="navigation">
        
         <div id="expenses">
@@ -32,15 +32,15 @@
             </div>
             <div class="boxe">
                 <h3>Total spent</h3>
-                <h1 id="total">0</h1>
+                <h1 id="total"></h1>
+            </div>
+            <div class="boxe">
+                <h3>Avarage expense</h3>
+                <h1 id="avg"></h1>
             </div>
             <div class="boxe">
                 <h3>most recent</h3>
-                <h1 id="recent">0</h1>
-            </div>
-            <div class="boxe">
-                <h3>most recent</h3>
-                <h1 id="recent">0</h1>
+                <h1 id="recent"></h1>
             </div>
         </div>
 <br>
@@ -52,11 +52,11 @@
             
             <table>
                 <tr>
-                    <td id="first">Date</td>
+                    <td >Date</td>
                     <td>Title</td>
                     <td>Category</td>
                     <td>Amount</td>
-                    <td id="last">Actions</td>
+                    <td >Actions</td>
 
                 </tr>
             </table>

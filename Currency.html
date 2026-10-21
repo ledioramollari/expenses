@@ -34,18 +34,18 @@
         </p>
 
         <h5>Amount in Lek</h5>
-        <input type="number">
+        <input type="number" id="LekAmount">
         <h5>Currency</h5>
-        <select name="Currency" id="">
+        <select name="Currency" id="listed">
             
             <option value="EUR">EUR</option>
-            <option value="USD">UDS</option>
+            <option value="USD">USD</option>
             <option value="GPB">GPB</option>
             <option value="CHF">CHF</option>
             <option value="TRY">TRY</option>
             <option value="MKD">MKD</option>
         </select>
-        <button>Convert</button>
+        <button onclick="read()" >Convert</button>
 
         <h1 id="converted"></h1>
     </div>

@@ -30,13 +30,13 @@
     <div id="addinfo">
         <h2>Add expense</h2>
         <h5>Title</h5>
-        <input type="text" placeholder="Example:Coffe with friends">
+        <input type="text" id="title" placeholder="Example:Coffe with friends">
 
         <h5>Amount(Lek)</h5>
-        <input type="number" placeholder="Example:300">
+        <input type="number" id="Amount" placeholder="Example:300">
 
         <h5>Category</h5>
-        <select name="category">
+        <select name="category" id="category">
             <option value="" disabled selected hidden>Select a category</option>
             <option value="food">Food</option>
             <option value="Transport">Transport</option>
@@ -45,9 +45,9 @@
             <option value="others">Others</option>
         </select>
         <h5>Date</h5>
-        <input type="date">
+        <input type="date" id="date">
 
-        <button>Add</button>
+        <button onclick="add()">Add</button>
     </div>
 
 
