@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
      <script src="script.js" defer></script>
 </head>
-<body onload="startTime(),update()" >
+<body onload="startTime(),update(),updateTable()">
     <div class="navigation">
        
         <div id="expenses">
@@ -35,7 +35,7 @@
                 <h1 id="total"></h1>
             </div>
             <div class="boxe">
-                <h3>Avarage expense</h3>
+                <h3>Average expense</h3>
                 <h1 id="avg"></h1>
             </div>
             <div class="boxe">
@@ -47,19 +47,23 @@
         <div id="fullTable">
             <div id="topTable">
             <h2>Expenses</h2> 
-            <input type="text" placeholder="Search by Title" id="titleSearch">
+            
             </div>
             
-            <table>
-                <tr>
-                    <td >Date</td>
-                    <td>Title</td>
-                    <td>Category</td>
-                    <td>Amount</td>
-                    <td >Actions</td>
-
-                </tr>
-            </table>
+            <table id="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Title</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
             <br><br><br><br>
             <button id="Delete" onclick="deleteall()">Delete all expenses</button>
         </div>

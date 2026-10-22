@@ -10,10 +10,10 @@ else {
 
 
 function add() {
-    const title = document.getElementById('title').value
-    const amount = document.getElementById('Amount').value
-    const category = document.getElementById('category').value
-    const date = document.getElementById('date').value
+    const title = document.getElementById('title').value;
+    const amount = document.getElementById('Amount').value;
+    const category = document.getElementById('category').value;
+    const date = document.getElementById('date').value;
     addExpense(title, amount, category, date);
     clear();
 }
@@ -27,8 +27,7 @@ function clear() {
 
 function addExpense(title, amount, category, date) {
     list.push({ title: title, amount: amount, category: category, date: date });
-
-    localStorage.setItem('myExpenses', JSON.stringify(list))
+    localStorage.setItem('myExpenses', JSON.stringify(list));
 
 }
 
@@ -58,6 +57,40 @@ function update() {
         recent.innerHTML = list[length - 1].amount;
     }
 }
+
+function updateTable() {
+    let tableBody = document.querySelector('#table tbody');
+    
+   
+    for (let i = 0; i < list.length; i++) {
+        let row = tableBody.insertRow(-1); 
+        
+        let cell1 = row.insertCell(0);
+        let cell2 = row.insertCell(1);
+        let cell3 = row.insertCell(2);
+        let cell4 = row.insertCell(3);
+        let cell5 = row.insertCell(4);
+
+        cell1.textContent = list[i].date;
+        cell2.textContent = list[i].title;
+        cell3.textContent = list[i].amount;
+        cell4.textContent = list[i].category;
+
+        let deleteBtn = document.createElement('button');
+        deleteBtn.className = 'delete';
+        deleteBtn.onclick = function() {
+            list.splice(i, 1);
+            localStorage.setItem('myExpenses', JSON.stringify(list));
+            row.remove();
+            update();
+        }
+        deleteBtn.textContent = 'Delete';
+        deleteBtn.addEventListener('click', () => row.remove());
+
+        cell5.appendChild(deleteBtn);
+    }
+}
+
 
 function updateHome() {
     length = list.length;
@@ -139,9 +172,11 @@ function convert(toCurrency, amount) {
 
 function deleteall(){
     list.length=0;
-    console.log(list.length)
+    console.log(list.length);
      localStorage.setItem('myExpenses', JSON.stringify(list));
-update() ;
+
+location.reload();
+
 
 }
 
