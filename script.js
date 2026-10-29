@@ -142,14 +142,14 @@ function convert(toCurrency, amount) {
     fetch(url)
         .then(response => {
             if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
+                throw new Error(`Status: ${response.status}`);
             }
             return response.json();
         })
         .then(data => {
             console.log("API Status:", data.result);
-            console.log("Base Currency:", data.base_code);
-            console.log("All Conversion Rates:", data.conversion_rates);
+            
+           
 
 
             const Rate = data.conversion_rates[toCurrency];
@@ -163,7 +163,7 @@ function convert(toCurrency, amount) {
             const con = document.getElementById('converted').innerHTML = result + " " + toCurrency;
         })
         .catch(error => {
-            console.error("Error fetching exchange rates:", error);
+            console.error(error);
         });
 
 
